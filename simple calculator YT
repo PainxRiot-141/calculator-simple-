@@ -1,0 +1,42 @@
+//pls DO NOT just copy and paste the code.... it wont help you gaining any knowledge pls just understand the logic behind it and use this code as a refrence. You can contact me on my ig @painxriotyt
+
+
+ 
+using System;
+
+namespace Simple_calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+       
+
+        {
+            Console.WriteLine("*****SIMPLE CALCULATOR*****");
+            Console.WriteLine("Enter your first number please");
+            float num1 = Convert.ToInt32(Console.ReadLine()); //in c# u cant just say console.readline directly cuz u have to convert num1(string) into integer so thats why Convert.ToInt32
+            Console.WriteLine("Enter your Second number please");
+            float num2 = Convert.ToInt32(Console.ReadLine());
+            //Now we will add if statements for the mathematical operators!
+            Console.WriteLine("What do you want to do with these two numbers? " + "\n" + "1. Add?(+)" + "\n" + "2.Sub?(-)" + "\n" + "3.Div? (/)" + "\n" + "4.multi? (*)");
+            float num3 = 0;
+            string op = Console.ReadLine();
+            if (op == "+")
+                num3 = num1 + num2;
+            else if (op == "-")
+                num3 = num1 - num2;
+            else if (op == "/")
+                num3 = num1 / num2;
+            else if (op == "*")
+                num3 = num1 * num2;
+            else
+                Console.WriteLine("Sorry I cant complete this operation");
+            Console.WriteLine("The result is " + num3);
+            Console.WriteLine("Thank you for for using me, Hope i helped you :D press any key to exit");
+            Console.ReadLine();
+           
+
+
+        }
+    }
+}
